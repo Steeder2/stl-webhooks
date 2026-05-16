@@ -243,6 +243,10 @@ def activity_sms():
     return jsonify({"ok": True, "sms": sms})
 
 # ---- Health check ----
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({"status": "ok", "service": "stl-webhooks", "time": datetime.now().isoformat()})
+
 @app.route('/health', methods=['GET'])
 def health():
     return jsonify({"status": "ok", "time": datetime.now().isoformat()})
