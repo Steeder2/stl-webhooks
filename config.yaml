@@ -1,0 +1,20 @@
+# STL Webhook Server Configuration (public — secrets are set via Render env vars)
+retell:
+  api_key: ""
+  base_url: "https://api.retellai.com/v2"
+  from_number: "+18887991869"
+agents:
+  mary_lou: ""
+  notifier: ""
+smtp:
+  host: "smtp.gmail.com"
+  port: 587
+  user: ""
+  password: ""
+notifications:
+  kirk_email: ""
+  telus_cell: ""
+  sms_gateway: "@msg.telus.com"
+server:
+  port: 5000
+  keepalive_minutes: 5
